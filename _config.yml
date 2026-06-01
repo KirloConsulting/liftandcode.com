@@ -1,0 +1,13 @@
+title: Lift & Code
+description: Microsoft Dynamics 365 Business Central extensions
+url: https://liftandcode.com
+email: support@liftandcode.com
+
+theme: minima
+permalink: pretty
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
