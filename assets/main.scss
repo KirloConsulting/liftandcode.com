@@ -1,0 +1,238 @@
+---
+---
+
+@import "minima";
+
+$lnc-accent: #2563eb;
+$lnc-accent-dark: #1d4ed8;
+$lnc-surface: #f8fafc;
+$lnc-border: #e2e8f0;
+$lnc-muted: #64748b;
+
+.hero {
+  margin: -30px -15px 40px;
+  padding: 64px 24px 56px;
+  background: linear-gradient(180deg, $lnc-surface 0%, #ffffff 100%);
+  border-bottom: 1px solid $lnc-border;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  margin: 0 0 16px;
+  font-weight: 800;
+}
+
+.hero p.lead {
+  font-size: 1.35rem;
+  color: $lnc-muted;
+  max-width: 640px;
+  margin: 0 auto 28px;
+  line-height: 1.45;
+}
+
+.hero-ctas {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.1s ease, background-color 0.15s ease;
+}
+
+.btn-primary {
+  background: $lnc-accent;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background: $lnc-accent-dark;
+  color: #ffffff;
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background: #ffffff;
+  color: $lnc-accent;
+  border: 1px solid $lnc-border;
+}
+
+.btn-secondary:hover {
+  background: $lnc-surface;
+  color: $lnc-accent-dark;
+  text-decoration: none;
+}
+
+.btn-disabled {
+  background: $lnc-surface;
+  color: $lnc-muted;
+  border: 1px dashed $lnc-border;
+  cursor: not-allowed;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin: 40px 0;
+}
+
+.feature-grid .card {
+  padding: 24px;
+  border: 1px solid $lnc-border;
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.feature-grid .card h3 {
+  margin-top: 0;
+  font-size: 1.15rem;
+}
+
+.feature-grid .card p {
+  margin-bottom: 0;
+  color: $lnc-muted;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 700px) {
+  .feature-grid { grid-template-columns: 1fr; }
+  .hero h1 { font-size: 2.6rem; }
+  .hero p.lead { font-size: 1.1rem; }
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 32px;
+  margin: 24px 0 40px;
+}
+
+.two-col ul {
+  margin: 0;
+  padding-left: 1.2em;
+}
+
+@media (max-width: 700px) {
+  .two-col { grid-template-columns: 1fr; }
+}
+
+.steps {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0 40px;
+  counter-reset: step;
+}
+
+.steps li {
+  counter-increment: step;
+  position: relative;
+  padding: 12px 12px 12px 56px;
+  margin-bottom: 8px;
+  background: $lnc-surface;
+  border-radius: 8px;
+}
+
+.steps li::before {
+  content: counter(step);
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: $lnc-accent;
+  color: #ffffff;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+.shots {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  margin: 24px 0 40px;
+}
+
+.shot,
+.screenshot-placeholder {
+  border: 1px solid $lnc-border;
+  border-radius: 10px;
+  overflow: hidden;
+  background: $lnc-surface;
+}
+
+.shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.shot figcaption,
+.screenshot-placeholder .caption {
+  padding: 10px 14px;
+  font-size: 0.85rem;
+  color: $lnc-muted;
+  background: #ffffff;
+  border-top: 1px solid $lnc-border;
+}
+
+.screenshot-placeholder .frame {
+  aspect-ratio: 16 / 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $lnc-muted;
+  font-size: 0.9rem;
+  background:
+    repeating-linear-gradient(
+      45deg,
+      transparent 0 12px,
+      rgba(0,0,0,0.025) 12px 24px
+    ),
+    $lnc-surface;
+}
+
+.product-card {
+  display: block;
+  padding: 28px;
+  border: 1px solid $lnc-border;
+  border-radius: 12px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.15s ease, transform 0.1s ease;
+  margin: 24px 0;
+  background: #ffffff;
+}
+
+.product-card:hover {
+  border-color: $lnc-accent;
+  text-decoration: none;
+  color: inherit;
+  transform: translateY(-2px);
+}
+
+.product-card h3 {
+  margin: 0 0 8px;
+  color: $lnc-accent;
+}
+
+.product-card p {
+  margin: 0;
+  color: $lnc-muted;
+}

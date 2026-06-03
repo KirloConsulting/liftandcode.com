@@ -5,45 +5,86 @@ description: Drag-and-drop file attach for Microsoft Dynamics 365 Business Centr
 permalink: /filedrop-pro/
 ---
 
-## Stop opening Incoming Documents one record at a time
+<div class="hero" markdown="0">
+  <h1>Drop. Done.</h1>
+  <p class="lead">Attach files to Business Central journals and documents in one motion. No dialogs, no detours.</p>
+  <div class="hero-ctas">
+    <span class="btn btn-disabled">Coming soon on AppSource</span>
+    <a class="btn btn-secondary" href="/filedrop-pro/help/">See how it works</a>
+  </div>
+  <div class="screenshot-placeholder" style="max-width:760px;margin:0 auto;">
+    <div class="frame">Hero screenshot — General Journal with the FileDrop Pro factbox</div>
+    <div class="caption">1280×720 — replace with <code>/assets/filedrop-pro/hero.png</code></div>
+  </div>
+</div>
 
-FileDrop Pro adds a drag-and-drop file-upload factbox to journals, ledger entries, and document lists in Microsoft Dynamics 365 Business Central. Drop one file or many — onto a single record or a multi-selection — and FileDrop Pro creates the matching Incoming Document entries and attachments in a single step.
+## Skip the click-fest
 
-No more switching to Incoming Documents, picking files, and linking entries by hand.
+Stop opening Incoming Documents one record at a time. FileDrop Pro adds a drag-and-drop file-upload factbox to journals, ledger entries, and document lists. Drop one file or many — onto a single record or a multi-selection — and FileDrop Pro creates the matching Incoming Document entries and attachments in one step.
 
-## Where it works
+<div class="feature-grid" markdown="0">
+  <div class="card">
+    <h3>True drag-and-drop</h3>
+    <p>Straight from your desktop or file explorer. No upload dialog, no intermediate file picker.</p>
+  </div>
+  <div class="card">
+    <h3>Multi-select aware</h3>
+    <p>Pick the rows first, drop one file — every selected line gets the attachment in a single click.</p>
+  </div>
+  <div class="card">
+    <h3>Smart propagation</h3>
+    <p>Drop once on a journal line; every other line sharing the same Document No. is linked automatically.</p>
+  </div>
+</div>
 
-- **General Journal** — with multi-line selection and automatic propagation across every line sharing the same Document No.
+## See it in action
+
+<div class="shots" markdown="0">
+  <div class="screenshot-placeholder">
+    <div class="frame">General Journal — file mid-drop</div>
+    <div class="caption">1280×720</div>
+  </div>
+  <div class="screenshot-placeholder">
+    <div class="frame">Purchase Orders — multi-select + drop</div>
+    <div class="caption">1280×720</div>
+  </div>
+  <div class="screenshot-placeholder">
+    <div class="frame">FileDrop Pro Setup — area toggles</div>
+    <div class="caption">1280×720</div>
+  </div>
+</div>
+
+## Works where your team works
+
+<div class="two-col" markdown="1">
+- **General Journal** — multi-line, with Document No. propagation
 - **Item Journal** — same multi-line behaviour
-- **Customer Ledger Entries**, **Vendor Ledger Entries**, **General Ledger Entries**
-- **Sales Invoice List**, **Sales Credit Memos**
-- **Purchase Order List**, **Purchase Invoices**, **Purchase Credit Memos** — optionally fanning the same file out to every Purchase Order that shares a Vendor Invoice No.
+- **Customer Ledger Entries**
+- **Vendor Ledger Entries**
+- **General Ledger Entries**
+- **Sales Invoice List**
+- **Sales Credit Memos**
+- **Purchase Order List** — fan out by Vendor Invoice No.
+- **Purchase Invoices** / **Credit Memos**
 - **Posted Documents With No Inc. Doc.**
+</div>
 
-## Key features
+## Up and running in under a minute
 
-- True drag-and-drop from your desktop or file explorer — no upload dialog, no intermediate file picker
-- Drop multiple files in one motion
-- Multi-select records first, then drop a single file — every selected line gets the attachment in one click
-- Smart Document No. propagation on journal lines: drop once on any line, every other line with the same Document No. is linked to the same Incoming Document
-- Per-area toggle (Finance, Purchase, Sales, Inventory) so you can roll the feature out by department
-- One-click activation across every company in the tenant
-- Pure JavaScript control add-in — works on every modern browser, no plug-in, no special licensing
+<ol class="steps">
+  <li>Install FileDrop Pro from Microsoft AppSource</li>
+  <li>Open the <strong>FileDrop Pro Setup</strong> page and tick the areas you need — Finance, Purchase, Sales, Inventory</li>
+  <li>Open a supported page and drop a file on the FileDrop Pro factbox</li>
+</ol>
 
-## Setup
+Want the rest of the team in on it? Hit **Activate Drag and Drop in all companies** once and it rolls out across the tenant.
 
-1. Install FileDrop Pro from Microsoft AppSource
-2. Open the **FileDrop Pro Setup** page
-3. Tick **Finance**, **Purchase**, **Sales**, and/or **Inventory**
-4. *(Optional)* Click **Activate Drag and Drop in all companies** to roll out to every company at once
-5. Open General Journal (or any supported page) — drop a file on the FileDrop Pro factbox
+Full setup guide: [Help](/filedrop-pro/help/).
 
-Full setup instructions: [Help](/filedrop-pro/help/)
-
-## Compatibility
+## Works with
 
 - Business Central online (cloud), version 28 and later
-- All countries/regions where Business Central is available
+- All countries and regions where Business Central is available
 - English and Danish translations included
 
 ## Resources
@@ -51,4 +92,4 @@ Full setup instructions: [Help](/filedrop-pro/help/)
 - [Help and documentation](/filedrop-pro/help/)
 - [Privacy statement](/filedrop-pro/privacy/)
 - [End-user licence agreement](/filedrop-pro/eula/)
-- Support: [support@liftandcode.com](mailto:support@liftandcode.com)
+- Questions? [support@liftandcode.com](mailto:support@liftandcode.com)
